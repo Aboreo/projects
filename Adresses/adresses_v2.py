@@ -126,10 +126,10 @@ while True:
         print(f"\n{debugSaveList}\n")
 
     elif finding(anwser.capitalize(),indexOfadress) != -1:
-        action = ask(f"What do you want to do with {anwser.capitalize()}? Options: 'detils', 'del', 'edit'",'detils')
+        action = ask(f"What do you want to do with {anwser.capitalize()}? Options: 'details', 'del', 'edit'",'detils')
         index = indexOfadress.index(anwser.capitalize())
 
-        if action == 'detils':
+        if action == 'details':
             all_address[index].show()
             
         elif action == 'del':
